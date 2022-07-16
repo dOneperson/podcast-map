@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+
+<script src="https://open.spotify.com/genre/podcasts-web" async></script>
+<div id="embed-iframe"></div>
+
+<script>
+window.onSpotifyIframeApiReady = (IFrameAPI) => {
+  let element = document.getElementById('embed-iframe');
+  let options = {
+      uri: 'https://open.spotify.com/embed/episode/2HXMwQ2hq7cuYXOlzxtq7E?utm_source=generator'
+    };
+  let callback = (EmbedController) => {};
+  IFrameAPI.createController(element, options, callback);
+};  
+</script>
+
+</html>
